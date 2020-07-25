@@ -42,4 +42,10 @@ class TweetsController < ApplicationController
       redirect_to action: :index        
     end
   end
+
+  def set_tweet
+  @tweet = Tweet.find(params[:id])
+  end
+
+
 end
